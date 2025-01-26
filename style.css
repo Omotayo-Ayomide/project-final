@@ -1,0 +1,944 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/Hero-copy3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    color: white;
+    margin-left: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+} 
+
+.icon-close {
+    display: block;
+}
+
+.ham {
+    width: fit-content;
+    position: absolute;
+    right: 2rem;
+    display: block;
+    top: 1rem;
+    z-index: 1000; 
+}
+
+.navv {
+    display: flex;
+}
+
+.navv.active {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    gap: 1rem;
+}
+ 
+.first-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 500;
+}
+
+.second-nav {
+    padding-left: 11rem;
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.second-nav a {
+    padding-right: 1.5rem;
+}
+
+.search {
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #900;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 2rem;
+    text-decoration: 0.5s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+b {
+    color: white;
+    padding-right: 2rem;
+}
+
+h1 {
+    color: white;
+    margin-top: 8rem;
+    padding-left: 25.5rem;
+    font-size: 7.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.background-image-footer {
+    background-color: rgb(192, 18, 18);
+    width: 100vw;
+    height: 8vh;
+    margin-top: 12.2rem;
+}
+
+.background-footer {
+    color: white;
+    padding-left: 35rem;
+    padding-top: 0.7rem;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.societal-mission {
+    margin-top: 5rem;
+}
+
+.mission {
+    margin-left: 26.5rem;
+    font-weight: 900;
+    font-size: 2.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.societal {
+    margin-left: 26rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    margin: 20px;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.9rem;
+    font-weight: 200;
+}
+
+main {
+    background-color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.bbutton {
+    height: 9vh;
+    width: 35vw;
+    margin-left: 25.9rem;
+    margin-top: 3rem;
+    color: white;
+    background-color: rgb(192, 18, 18);
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 4rem;
+}
+
+.bbutton:hover {
+    background-color: rgb(139, 8, 8);
+}
+
+.campus {
+    margin-left: 29.5rem;
+    padding-top: 4rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.acad {
+    margin-left: 31.7rem;
+    padding-top: 4rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.research {
+    margin-left: 32.9rem;
+    padding-top: 4rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.events {
+    margin-left: 27.7rem;
+    padding-top: 4rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.health {
+    margin-left: 31.5rem;
+    padding-top: 4rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.life {
+    margin-left: 30.5rem;
+    padding-top: 4rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.athle {
+    margin-left: 33.4rem;
+    padding-top: 4rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.admis {
+    margin-left: 32.4rem;
+    padding-top: 4rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.campus-section {
+    background-color: rgb(245, 244, 244);
+}
+
+.campus-paragraph {
+    margin-left: 26rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    margin: 20px;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.amulets {
+    width: 45vw;
+    height: 59vh;
+}
+
+.container-one {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 272.5px;
+    height: 59vh;
+    text-align: center;
+}
+
+.dan-ho {
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.dan-ho:hover {
+    transform: scale(1.1);
+}
+
+.container-two {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 272.5px;
+    height: 59vh;
+    text-align: center;
+}
+
+.business {
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.business:hover {
+    transform: scale(1.1); 
+}
+
+.container {
+    display: flex;
+    text-align: left;
+    gap: 30px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+h4 {
+    color: rgb(121, 10, 10);
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+h3 {
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+
+h3:hover {
+    color: rgb(16, 75, 163);
+}
+
+.chair {
+    position: relative;
+}
+
+.film {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.social {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.house {
+    display: flex;
+    text-align: left;
+    gap: 30px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-top: 1.8rem;
+}
+
+div {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.academics-image {
+    display: flex;
+    text-align: left;
+    gap: 30px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 3rem;
+}
+
+.grayson {
+    width: 29vw;
+}
+
+.hopkins {
+    width: 29vw;
+}
+
+.elizabeth {
+    width: 29vw;
+}
+
+.undergraduate {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+}
+
+.academic-p {
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.blue-line {
+    margin-top: 1rem;
+    color: rgba(10, 99, 183, 0.776);
+    font-weight: 600;
+}
+
+.seven {
+    margin-top: 5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 24rem;
+}
+
+.passion {
+    margin-top: 1rem;
+    padding-left: 11.5rem;
+    word-spacing: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.med {
+    border-right: 2px solid black;
+    padding-right: 10px;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: rgba(10, 99, 183, 0.776);
+    font-size: 1.3rem;
+}
+
+.med:hover {
+    color: rgb(9, 119, 198);
+    text-decoration: underline;
+}
+
+.law {
+    border-right: 2px solid black;
+    padding-right: 10px;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: rgba(10, 99, 183, 0.776);
+    font-size: 1.3rem;
+}
+
+.law:hover {
+    color: rgb(9, 119, 198);
+    text-decoration: underline;
+}
+
+.humanities {
+    border-right: 2px solid black;
+    padding-right: 10px;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: rgba(10, 99, 183, 0.776);
+    font-size: 1.3rem;
+}
+
+.humanities:hover {
+    color: rgb(9, 119, 198);
+    text-decoration: underline;
+}
+
+.engineering {
+    border-right: 2px solid black;
+    padding-right: 10px;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: rgba(10, 99, 183, 0.776);
+    font-size: 1.3rem;
+}
+
+.engineering:hover {
+    color: rgb(9, 119, 198);
+    text-decoration: underline;
+}
+
+.edu {
+    border-right: 2px solid black;
+    padding-right: 10px;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: rgba(10, 99, 183, 0.776);
+    font-size: 1.3rem;
+}
+
+.edu:hover {
+    color: rgb(9, 119, 198);
+    text-decoration: underline;
+}
+
+.sustainability {
+    border-right: 2px solid black;
+    padding-right: 10px;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: rgba(10, 99, 183, 0.776);
+    font-size: 1.3rem;
+}
+
+.sustainability:hover {
+    color: rgb(9, 119, 198);
+    text-decoration: underline;
+}
+
+.bus {
+    text-decoration: none;
+    margin-top: 1rem;
+    color: rgba(10, 99, 183, 0.776);
+    font-size: 1.3rem;
+}
+
+.bus:hover {
+    color: rgb(9, 119, 198);
+    text-decoration: underline;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container img.background {
+    width: 100%;
+    display: block;
+    transition: filter 0.5s ease;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-container:hover img.background {
+    filter: blur(5px); 
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h2 {
+    margin: 20px 0 10px;
+    font-size: 1.5em;
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.overlay .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    overflow: hidden;
+    margin-bottom: 20px; 
+    z-index: 2; 
+}
+
+.overlay .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tokieda-quote {
+    line-height: 2.5rem;
+    font-size: 7rem;
+}
+
+.name {
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    font-size: medium;
+}
+
+.teach {
+    padding-top: 0.5rem;
+}
+
+hr {
+    width: 90vw;
+    margin-left: 3.5rem;
+    margin-top: 3.8rem;
+    border-color: rgb(194, 193, 193);
+}
+
+.institutes {
+    padding-top: 4rem;
+    font-weight: 900;
+    font-size: 1.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3rem;
+    margin-top: -2rem;
+}
+
+.cross {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.house-three {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.line {
+    width: 90vw;
+    margin-left: 3.5rem;
+    margin-top: 2rem;
+    border-color: rgb(194, 193, 193);
+}
+
+.house-four {
+    background-color: rgb(245, 244, 244);
+}
+
+.windows {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 272.5px;
+    height: 75vh;
+    text-align: center;
+}
+
+.activate {
+    display: flex;
+    gap: 40px;
+    margin-left: 4.5rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    width: 250px;
+    padding-bottom: 4rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    overflow: hidden;
+    text-align: left;
+}
+.card .image {
+    background: url('./images/spirit-house.jpg') center/cover;
+    height: 260px;
+    position: relative;
+}
+
+.card .image .date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.card .image .date span {
+    display: block;
+}
+
+.image2 {
+    background: url('./images/hazardd-image.jpg') center/cover;
+    height: 260px;
+    position: relative;
+}
+
+.card .image2 .date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+.date {
+    padding-top: 4rem;
+}
+
+.card .image2 .date span {
+    display: block;
+}
+
+.image3 {
+    background: url('./images/farm-image.jpg') center/cover;
+    height: 260px;
+    position: relative;
+}
+
+.card .image3 .date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.card .image3 .date span {
+    display: block;
+}
+
+.image4 {
+    background: url('./images/farm-image.jpg') center/cover;
+    height: 260px;
+    position: relative;
+}
+
+.card .image4 .date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.card .image4 .date span {
+    display: block;
+}
+
+.card .content {
+    padding: 15px;
+}
+.card .content .category {
+    color: #a52a2a;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.card .content .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.card .content .time {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.athletics {
+    background-color: rgb(245, 244, 244);
+}
+
+.maya {
+    height: 700px;
+    width: 1200px;
+    margin-left: 2rem;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.9rem;
+}
+
+.settings {
+    margin-left: 3.2rem;
+}
+
+.dish {
+    width: 100vw;
+    height: 70vh;
+}
+
+footer {
+    width: 100vw;
+    min-height: 85vh;
+    position: absolute;
+    background-color: white;
+}
+
+.social-media {
+    display: flex;
+    justify-content: right;
+    margin-right: 2.9rem;
+    gap: 0.5rem;
+    padding-top: 1.2rem;
+}
+
+.media-cover {
+    background-color: rgb(245, 244, 244);
+    height: 13vh;
+}
+
+.footer-button {
+    height: 7vh;
+    width: 13vw;
+    color: rgb(101, 100, 100);
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.1rem;
+    background-color: white;
+    transition: color 0.3s;
+}
+
+.footer-button:hover {
+    color: rgb(139, 8, 8);
+}
+
+ol a {
+    text-decoration: none;
+    color: black;
+    line-height: 2.5rem;
+}
+
+.engagement {
+    line-height: 1.3rem;
+}
+
+ol a:hover {
+    color: rgb(28, 138, 216);
+    text-decoration: underline;
+} 
+
+.footer-one {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.listt {
+    margin-left: 2rem;
+}
+
+.footer-h {
+    margin-left: 2rem;
+    color: rgb(121, 10, 10);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.ffooter-h {
+    margin-left: 2rem;
+    color: rgb(121, 10, 10);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.bbbutton {
+    line-height: 2rem;
+    margin-right: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.footer-button {
+    line-height: 2rem;
+    margin-top: 0.8rem;
+    margin-right: 2rem;
+}
+
+.footer-two {
+    display: flex;
+    width: 100vw;
+    /* height: 20vh; */
+    background-color: rgb(192, 18, 18);
+    padding-top: 1rem;
+}
+
+.stan {
+    color: white;
+    margin-left: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+.univ {
+    color: white;
+    margin-left: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.final-f a {
+    text-decoration: none;
+    line-height: 1.6rem;
+    margin-left: 2rem;
+    color: white;
+    text-decoration: 0.3s;
+}
+
+.final-f a:hover {
+    text-decoration: underline;
+}
+
+.final-f {
+    margin-left: 2rem;
+}
+
+.cali {
+    color: white;
+    margin-top: 0.3rem;
+    margin-left: 2rem;
+}
+
+
