@@ -1,18 +1,32 @@
-var ham = document.querySelector(".ham");
-var checker = true;
-var nav1 = document.querySelector(".navv");
-var nav2 = document.querySelector(".second-nav");
+document.addEventListener("DOMContentLoaded", function () {
+  const hamButton = document.querySelector(".ham");
+  const closeButton = document.querySelector(".icon-close");
+  const firstNav = document.querySelector(".navv");
 
-ham.addEventListener("click", () => {
-  if (checker) {
-    // Show both nav bars
-    nav1.style.display = "flex";
-    nav2.style.display = "flex";
-    checker = false;
-  } else {
-    // Hide both nav bars
-    nav1.style.display = "none";
-    nav2.style.display = "none";
-    checker = true;
+  hamButton.addEventListener("click", () => {
+      firstNav.classList.add("active");
+  });
+
+  closeButton.addEventListener("click", () => {
+      firstNav.classList.remove("active");
+  });
+
+  
+  const currentPage = window.location.pathname.split("/").pop() || "index.html"; 
+  const firstNavLinks = document.querySelectorAll(".navv a");
+  const secondNavLinks = document.querySelectorAll(".second-nav a");
+
+  function setActiveNav(links) {
+      links.forEach((link) => {
+          if (link.getAttribute("href") === currentPage) {
+              link.classList.add("active");
+          } else {
+              link.classList.remove("active");
+          }
+      });
   }
+
+  setActiveNav(firstNavLinks);
+
+  setActiveNav(secondNavLinks);
 });

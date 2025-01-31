@@ -1,12 +1,10 @@
 @media screen and (max-width: 768px) {
-
-    .html,
-    .body {
+    html, body {
         overflow-x: hidden;
         margin: 0;
-        padding: 0;
-        padding-top: none;
+        padding: 0; 
         height: 100%;
+        width: 100%; 
     }
 
     * {
@@ -20,7 +18,7 @@
     }
 
     header {
-        max-width: 100vw;
+        max-width: 100vw; 
         height: 100vh;
         background-image: url(./images/Hero-copy3.jpg);
         background-size: cover;
@@ -57,17 +55,20 @@
         display: none;
     }
 
+    /* .navv {
+        display: none;
+
+    .navv.active {
+        display: flex;
+    } */
+
     .ham {
         display: block;
-        width: fit-content;
-        position: absolute;
-        right: 2rem;
-        top: 1rem;
-        cursor: pointer;
     }
-    
+
+
     .icon-close {
-        display: block;
+        display: none;
         position: absolute;
         right: 5rem;
         top: 1rem;
@@ -94,6 +95,7 @@
     }
 
     .second-nav {
+        display: none;
         padding: 1.5rem 2rem;
         font-size: 1.3rem;
         font-weight: bold;
@@ -180,21 +182,12 @@
         gap: 1rem;
     }
 
-
-
     .mission {
         font-size: 1rem;
         font-size: clamp(1rem, -0.15384615384615374rem + 4.9230769230769225vw, 2.8rem);
     }
 
-    .mission,
-    .campus,
-    .acad,
-    .research,
-    .life,
-    .athle,
-    .admis,
-    .health {
+    .mission, .campus, .acad, .research, .life, .athle, .admis, .health {
         text-align: center;
         padding-left: 0;
         width: fit-content;
@@ -209,11 +202,6 @@
     }
 
     .societal {
-        font-size: 1rem;
-        font-size: clamp(1rem, -0.15384615384615374rem + 4.9230769230769225vw, 2.8rem);
-    }
-
-    .campus-paragraph {
         font-size: 1rem;
         font-size: clamp(1rem, -0.15384615384615374rem + 4.9230769230769225vw, 2.8rem);
     }
@@ -240,8 +228,7 @@
         font-size: clamp(1rem, -0.15384615384615374rem + 4.9230769230769225vw, 2.8rem);
     }
 
-    .container,
-    .house {
+    .container, .house {
         display: grid;
         grid-auto-rows: 1fr;
         grid-template-columns: 1fr;
@@ -261,17 +248,14 @@
         overflow: hidden;
     }
 
-    .grayson,
-    .hopkins,
-    .elizabeth {
+    .grayson, .hopkins, .elizabeth {
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
         overflow: hidden;
     }
 
-    .container-one,
-    .container-two {
+    .container-one, .container-two {
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
@@ -327,10 +311,7 @@
         overflow: hidden;
     }
 
-    .card .image,
-    .card .image2,
-    .card .image3,
-    .card .image4 {
+    .card .image, .card .image2, .card .image3, .card .image4 {
         display: none;
     }
 
@@ -351,10 +332,7 @@
         font-size: 0.9em;
     }
 
-    .card .image .date,
-    .card .image2 .date,
-    .card .image3 .date,
-    .card .image4 .date {
+    .card .image .date, .card .image2 .date, .card .image3 .date, .card .image4 .date {
         position: absolute;
         top: 10px;
         left: 10px;
@@ -367,24 +345,15 @@
         border-radius: 4px;
     }
 
-    .card .image .date span,
-    .card .image2 .date span,
-    .card .image3 .date span,
-    .card .image4 .date span {
+    .card .image .date span, .card .image2 .date span, .card .image3 .date span, .card .image4 .date span {
         display: block;
     }
 
-    .card .image .date span:first-child,
-    .card .image2 .date span:first-child,
-    .card .image3 .date span:first-child,
-    .card .image4 .date span:first-child {
+    .card .image .date span:first-child, .card .image2 .date span:first-child, .card .image3 .date span:first-child, .card .image4 .date span:first-child {
         font-size: 1rem;
     }
 
-    .card .image .date span:last-child,
-    .card .image2 .date span:last-child,
-    .card .image3 .date span:last-child,
-    .card .image4 .date span:last-child {
+    .card .image .date span:last-child, .card .image2 .date span:last-child, .card .image3 .date span:last-child, .card .image4 .date span:last-child {
         font-size: 1.2rem;
     }
 
@@ -408,9 +377,7 @@
         text-align: left;
     }
 
-    .undergraduate,
-    .academic-p,
-    .settings {
+    .undergraduate, .academic-p, .settings {
         margin: 0;
         max-width: 100%;
     }
@@ -418,7 +385,7 @@
     .bbutton {
         width: 70%;
         height: 8vh;
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
         margin-left: 3.2rem;
     }
 
@@ -435,8 +402,7 @@
         margin-top: 2rem;
     }
 
-    .footer-one,
-    .footer-two {
+    .footer-one, .footer-two {
         flex-direction: column;
         text-align: center;
     }
@@ -457,7 +423,6 @@
     .univ {
         margin-right: 1.5rem;
     }
-
 }
 
 @media (max-width: 480px) {

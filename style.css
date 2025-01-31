@@ -32,17 +32,24 @@ header {
     font-weight: 500;
 } 
 
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Adjust to match your design */
+}
+
 .icon-close {
-    display: block;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .ham {
-    width: fit-content;
-    position: absolute;
-    right: 2rem;
-    display: block;
-    top: 1rem;
-    z-index: 1000; 
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+    margin-right: 2rem; /* Adjust spacing as needed */
 }
 
 .navv {
@@ -59,6 +66,12 @@ header {
     width: 100%;
     padding: 2rem;
     gap: 1rem;
+}
+
+.ham {
+    display: none;
+    cursor: pointer;
+    margin-right: 2rem; 
 }
  
 .first-nav {
@@ -677,7 +690,7 @@ hr {
     text-align: left;
 }
 .card .image {
-    background: url('./images/spirit-house.jpg') center/cover;
+    background: url('./images/papua-image.jpg') center/cover;
     height: 260px;
     position: relative;
 }
@@ -722,7 +735,7 @@ hr {
 }
 
 .image3 {
-    background: url('./images/farm-image.jpg') center/cover;
+    background: url('./images/wearable-sensors-image.jpg') center/cover;
     height: 260px;
     position: relative;
 }
@@ -743,7 +756,7 @@ hr {
 }
 
 .image4 {
-    background: url('./images/farm-image.jpg') center/cover;
+    background: url('./images/management-image.jpg') center/cover;
     height: 260px;
     position: relative;
 }
