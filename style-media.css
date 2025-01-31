@@ -113,12 +113,12 @@
 
     h1 {
         color: white;
-        font-size: 7.5rem;
+        font-size: 9rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 500;
         position: absolute;
-        padding-right: 4rem;
-        padding-top: 11rem;
+        padding-right: 1rem;
+        padding-top: 24rem;
         transform: translate(-50%, -50%);
         text-align: center;
         z-index: 400;
