@@ -182,11 +182,6 @@
         gap: 1rem;
     }
 
-    .mission {
-        font-size: 1rem;
-        font-size: clamp(1rem, -0.15384615384615374rem + 4.9230769230769225vw, 2.8rem);
-    }
-
     .mission, .campus, .acad, .research, .life, .athle, .admis, .health {
         text-align: center;
         padding-left: 0;
